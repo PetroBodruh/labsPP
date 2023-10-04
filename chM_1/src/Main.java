@@ -4,18 +4,18 @@ public class Main {
     public static void main(String[] args) {
         // Задані точні значення аргументів
         Scanner scann= new Scanner(System.in);
-        System.out.println("sd");
+        System.out.println("перше число : ");
         double x1 = scann.nextDouble();
-        System.out.println("asfa");
+        System.out.println("друге чило : ");
         double x2 = scann.nextDouble();
-        System.out.println("sdf");
+        System.out.println("третє число : ");
         double x3 = scann.nextDouble();
 
         // Обчислення величини F
         double F = calculateF(x1, x2, x3);
 
         // Точне значення F (якщо воно вам відоме)
-        double exactF = calculateExactF(x1, x2, x3);
+        double exactF = calculateExactF(x1+0.001, x2+0.001, x3+0.001);
 
         // Обчислення абсолютної похибки
         double absoluteError = Math.abs(exactF - F);
@@ -37,7 +37,10 @@ public class Main {
         double term4 = 4 * x1 * x2;
         double term5 = 3 * x3;
         double term6 = Math.cos(x2 - x1);
+        System.out.println("косинус "+term6);
+
         return term1 + term2 + term3 + term4 - term5 + term6;
+
     }
 
     // Обчислення точного значення F (якщо воно вам відоме)

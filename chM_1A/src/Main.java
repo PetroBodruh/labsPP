@@ -22,9 +22,9 @@ public class Main {
         int firstSignificantDigit = Integer.parseInt(String.valueOf(F).replace(".", "").substring(0, 1));
 
         // Виведення результатів
-        System.out.println("Група: Ваша група");
-        System.out.println("ПІБ студента: Ваше ПІБ");
-        System.out.println("Номер ЛР і варіанту завдання: ЛР1, Варіант 1");
+        System.out.println("Група: OI-21");
+        System.out.println("ПІБ студента: Бодруг Петро Володимирович");
+        System.out.println("ЛР1, Варіант 1");
         System.out.println("Значення F: " + F);
         System.out.println("Кількість точних десяткових знаків: " + decimalPlaces);
         System.out.println("Перша значуща цифра: " + firstSignificantDigit);
